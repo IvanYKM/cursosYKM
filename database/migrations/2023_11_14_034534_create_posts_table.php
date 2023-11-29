@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug') ;
             $table->text('extract');
             $table->longText('body');
+            $table->string('speaker');
             $table->enum('status', [1,2])->default(1);
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');

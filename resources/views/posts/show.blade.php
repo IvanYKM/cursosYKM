@@ -12,7 +12,7 @@
             <div class="col-span-2">
 
                 <figure>
-                    <img class="w-full h-80 object-cover object-center" src="{{Storage::url($post->image->url)}}" alt="">
+                    <img class="w-full h-96 object-cover object-center" src="{{Storage::url($post->image->url)}}" alt="">
                 </figure>
 
                 <div class="text-base text-gray-500 mt-4">
@@ -22,7 +22,7 @@
             </div>
             {{-- Contenido relacionado --}}
             <aside>
-                <h1 class="text-2xl font-bold text-gray-600 mb-4">Más en {{$post->category}}</h1>
+                {{-- <h1 class="text-2xl font-bold text-gray-600 mb-4">Más en {{$post->category->name}}</h1> --}}
             </aside>
         </div>
     </div>
