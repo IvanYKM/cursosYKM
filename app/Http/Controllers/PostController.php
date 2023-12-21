@@ -8,7 +8,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index(){
-        $posts = Post::where('status', 2)->latest('created_at')->paginate(30);
+        $posts = Post::where('status', 2)->whereMonth('created_at',12)->orderBy('created_at','ASC')->paginate(40);
 
         return view('posts.index', compact('posts'));
 
@@ -26,3 +26,15 @@ class PostController extends Controller
         return view('posts.show', compact('post', 'similares'));
     }
 }
+
+
+
+// Rebeca
+// Adrián
+// Miguel
+// Carlos
+// Rafael
+// Pablo
+// Iván
+// Fumiko
+// Fumie

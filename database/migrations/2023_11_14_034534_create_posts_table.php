@@ -19,6 +19,9 @@ return new class extends Migration
             $table->longText('body');
             $table->string('speaker');
             $table->enum('status', [1,2])->default(1);
+            // $table->date('date_start');
+            // $table->time('time_start');
+            // $table->time('time_end');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

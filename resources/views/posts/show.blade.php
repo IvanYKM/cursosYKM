@@ -12,7 +12,7 @@
             <div class="col-span-2">
 
                 <figure>
-                    <img class="w-full h-96 object-cover object-center" src="{{Storage::url($post->image->url)}}" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="{{Storage::url($post->image->url)}}" alt="">
                 </figure>
 
                 <div class="text-base text-gray-500 mt-4">
